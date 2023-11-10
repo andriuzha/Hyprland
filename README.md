@@ -6,7 +6,7 @@ Esta es quizá la forma más sencilla de configurar su sistema ArchLinux para un
 <b> Requisitos: </b>
 </br>
 Instalación mínima y limpia de Arch con HyprLand </br>
-Prefiero el Display Manager Ly
+Prefiero el Display Manager *Ly*
 <br>
 
 <b> Instalamos Git</b>
@@ -18,13 +18,13 @@ sudo pacman -S git
 
 <b> Instalamos PARU </b>
 </br>
-Clonamos el repositorio, ingresamos a la carpeta correspondiente y compilamos con la siguiente línea
+Clonamos el repositorio, ingresamos a la carpeta correspondiente y compilamos con la siguiente línea:
 ```
 git clone https://aur.archlinux.org/paru-bin.git && cd paru-bin && makepkg -Si
 ```
 <br>
 
-<b>Instalamos las dependencies y paquetes necesarios </b>
+<b> Instalamos las dependencies y paquetes necesarios </b>
 </br>
 ```
 paru -S imv wlogout brightnessctl wl-clipboard waybar-hyprland swaylock-effects wofi pavucontrol pamixer file-roller htop ttf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji hyprpaper linux-headers alsa-utils less wlroots gnu-free-fonts noto-fonts ttf-bitstream-vera ttf-croscore ttf-dejavu ttf-droid ttf-ibm-plex ttf-liberation udiskie grim slurp
@@ -53,15 +53,22 @@ Dentro de la carpeta *~/.config/hypr/* esta el archivo *hyprpaper.conf*  que ind
 Por defecto es: ~/wallpaper/wallpaper.jpg Puede configurarlo a su preferencia.
 <br>
 
+<b> Limpieza </b>
+</br>
+Borramos las carpetas donde clonamos el repositorios de PARU y esta configuración. </br>
+Es preferible conservar el archivo original *hyprpaper.conf* en alguna carpeta de respaldo.
+```
+rm -rf Hyprland paru-bin
+```
 
 
 <b> Screenshots </b>
 </br>
 Aquí hay unas capturas de pantalla del entorno una vez finalizada la configuración
-<br>
+<br></br>
 
 <img align="center" src="/screenshot1.png">
-*Wallpaper tomado de https://wallpaperset.com/*
-<br>
+Wallpaper tomado de https://wallpaperset.com/
 
+<br></br>
 <img align="center" src="/screenshot2.png">
